@@ -1,0 +1,255 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+#root{
+    width: 100vw;
+    height: 100vh;
+}
+body{
+    margin: 0;
+    background: rgb(0, 0, 0);
+}
+.Main{
+    position: absolute;
+    overflow: hidden;
+    top:0;
+    height: 100vh;
+    width: 100vw;
+    background: url(../Resources/bc_pc.jpg);
+    background-size: 100vw 100vh;   
+    display: grid;
+}
+.pc{
+    display: grid;
+}
+.pc button img{
+    height: 40px;
+    width: 40px;
+    margin-top: -5px;
+    margin-left: 2px;
+}
+.pc button{
+    margin: 10px;
+    height: 70px;
+    width:70px;
+    background: transparent;
+    border: none;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    font-size: 12px;
+    &:nth-child(2){
+        height: 90px;
+    }
+}
+.pc button:hover{
+    background: rgba(255, 255, 255, 0.26);
+    border-radius: 5px;
+}
+.nav{
+    margin-top: 58vh;
+    height: 51px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.664);
+}
+.nav button{
+    padding: 10px;
+    font-size: 25px;
+}
+.nav button:hover{
+    background: rgba(255, 255, 255, 0.205);
+}
+.showcase{
+    position: absolute;
+    display: grid;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    background: rgba(0, 0, 0, 0.342);
+    backdrop-filter: blur(300px);
+    display: none;
+}
+.showcase header,.projects header,.certificates header,.lanAttacker header{
+    height: 5vh;
+    width: 100vw;
+    background: rgba(0, 0, 0, 0.603);
+}
+.showcase header button,.projects header button,.certificates header button,.lanAttacker header button{
+    padding: 5px 15px 12px 11px;
+    color: white;
+    font-weight: 700;
+    &:nth-child(1){
+        margin-left: 93.4vw;
+    }
+}
+.showcase header button:hover,.projects header button:hover,.certificates header button:hover,.lanAttacker header button:hover{
+    background: rgba(0, 162, 255, 0.486);
+    &:nth-child(3){
+        background-color: red;
+    }
+}
+.showcase .container img{
+    height: 40px;
+    width: 40px;
+    margin-left: 7px;
+}
+.showcase .container button{
+    margin: 10px;
+    height: auto;
+    width:auto;
+    background: transparent;
+    border: none;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.showcase .container button:hover{
+    background: rgba(0, 174, 255, 0.377);
+    height: auto;
+    width: auto;
+    border-radius: 12px;
+}
+
+.projects{
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    background: rgba(0, 0, 0, 0.342);
+    backdrop-filter: blur(300px);
+}
+.projects .container img{
+    height: 40px;
+    width: 40px;
+    margin-left: 7px; 
+}
+.projects .container button{
+    margin: 10px;
+    height: auto;
+    width:auto;
+    background: transparent;
+    border: none;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    font-size: 12px;
+}
+.projects .container button:hover{
+    background: rgba(0, 174, 255, 0.377);
+    height: auto;
+    width: auto;
+    border-radius: 12px;
+}
+
+.certificates{
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    background: rgba(0, 0, 0, 0.342);
+    backdrop-filter: blur(300px);
+    display: block;
+}
+.certificates .container img{
+    height: 40px;
+    width: 40px;
+    margin-left: 20px;
+    margin-bottom: 10px; 
+}
+.certificates .container button{
+    margin: 10px;
+    height: auto;
+    width:100px;
+    background: transparent;
+    border: none;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    font-size: 12px;
+}
+.certificates .container button:hover{
+    background: rgba(0, 174, 255, 0.377);
+    height: auto;
+    width:100px;
+    border-radius: 12px;
+}
+.lanAttacker{
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    background: rgba(0, 0, 0, 0.342);
+    backdrop-filter: blur(300px);
+    display: block;
+}
+
+.description h1{
+    color: white;
+    font-weight: 900;
+    margin: 10px;
+}
+.description p{
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 10px;
+}
+.description ul li{
+    color: white;
+    margin: 5px;
+    margin-left: 40px;
+}
+.description a{
+    text-decoration:underline;
+    color: rgb(59, 0, 221);
+}
+.scrshots img{
+    height: 55vh;
+    width: 37vw;
+    margin-left: 12px;
+}
+.windows{
+    height: 60vh;
+    width: 30vw;
+    top: 33.5vh;
+    left: 0px;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.336);
+    backdrop-filter: blur(20px);
+}
+.rps{
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    background: rgba(0, 0, 0, 0.342);
+    backdrop-filter: blur(300px);
+    display: block; 
+}
+.rps iframe{
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+}
+.rps header{
+    height: 5vh;
+    width: 100vw;
+    background: rgb(255, 255, 255);
+}
+.rps header button{
+    padding: 5px 15px 12px 11px;
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    &:nth-child(1){
+        margin-left: 93.4vw;
+    }
+}
+.rps header button:hover{
+    background: rgba(0, 162, 255, 0.486);
+    &:nth-child(3){
+        background-color: red;
+    }
+}
